@@ -8,7 +8,6 @@
 body{
     background-color: #1f3565;
 }
-
 html{
     color: #000;
     font: 18px/1.618 sans-serif;
@@ -16,7 +15,7 @@ html{
 }
 a{
     color: #3877a0;
-    padding: .25rem .5rem;
+    padding: 0 .5rem;
     text-decoration: none;
 }
 .container{
@@ -29,6 +28,7 @@ a{
     -moz-box-shadow: 0px 3px 37px -14px rgba(0,0,0,0.75);
     box-shadow: 0px 3px 37px -14px rgba(0,0,0,0.75);
 }
+
 #header{
     display: flex;
     align-items: center;
@@ -49,6 +49,7 @@ nav{
     justify-content: center;
     background: #333;
     opacity: .8;
+    z-index: 1;
 }
 nav a{
     text-decoration: none;
@@ -57,6 +58,8 @@ nav a{
 }
 nav a:hover {
     background: #666;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 #aboutMe_title{
@@ -81,6 +84,7 @@ nav a:hover {
     height: auto;
     max-width: 100%;
     border: 5px solid black;
+    border-radius: 3px;
 }
 .aboutMe_skills_header{
     text-align: center;
@@ -112,7 +116,7 @@ nav a:hover {
 }
 .project_button{
     border-radius: 5px;
-    bottom: .5rem;
+    bottom: 2rem;
     color: #2a538d;
     margin: 0px;
     opacity: 0;
@@ -126,6 +130,8 @@ nav a:hover {
 }
 .projects_column{
     padding: 0 .5rem;
+    border: 3px solid black;
+    border-radius: 5px;
 }
 .project_title{
     text-align: center;
@@ -138,6 +144,7 @@ nav a:hover {
     height: 300px;
     object-fit: fill;
     border: 2px solid #000;
+    border-radius: 3px;
 }
 #myProjects .projects_column .project_figure .image_credit{
     font-size: xx-small;
@@ -165,7 +172,6 @@ nav a:hover {
     padding-left: .5rem;
     list-style-type: none;
 }
-
 
 #footer{
     background-color: #333;
